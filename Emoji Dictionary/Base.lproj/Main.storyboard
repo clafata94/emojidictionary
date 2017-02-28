@@ -68,16 +68,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-wt-RE2">
+                                <rect key="frame" x="147.5" y="420" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creation Date: Empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQW-qC-wgV">
+                                <rect key="frame" x="106" y="471" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kIE-wt-RE2" firstAttribute="centerX" secondItem="Auy-JN-1dP" secondAttribute="centerX" id="0Ly-WY-ipy"/>
                             <constraint firstItem="k2W-10-Fds" firstAttribute="centerX" secondItem="Auy-JN-1dP" secondAttribute="centerX" id="ID0-z5-Bkw"/>
+                            <constraint firstItem="nQW-qC-wgV" firstAttribute="centerX" secondItem="Auy-JN-1dP" secondAttribute="centerX" id="Q1r-KQ-eNp"/>
+                            <constraint firstItem="nQW-qC-wgV" firstAttribute="top" secondItem="kIE-wt-RE2" secondAttribute="bottom" constant="30" id="c8x-gn-nU9"/>
                             <constraint firstItem="Rnz-qM-Uwd" firstAttribute="top" secondItem="k2W-10-Fds" secondAttribute="bottom" constant="50" id="dbx-Hq-xji"/>
                             <constraint firstItem="Rnz-qM-Uwd" firstAttribute="centerX" secondItem="Auy-JN-1dP" secondAttribute="centerX" id="ibY-r0-OcJ"/>
+                            <constraint firstItem="kIE-wt-RE2" firstAttribute="top" secondItem="Rnz-qM-Uwd" secondAttribute="bottom" constant="30" id="k4E-52-9r7"/>
                             <constraint firstItem="k2W-10-Fds" firstAttribute="top" secondItem="Auy-JN-1dP" secondAttribute="top" constant="80" id="rGq-tp-FXK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="kIE-wt-RE2" id="f7M-Lb-lih"/>
+                        <outlet property="creationLabel" destination="nQW-qC-wgV" id="YnW-mj-Qoy"/>
                         <outlet property="definitionLabel" destination="Rnz-qM-Uwd" id="PVN-C0-tvm"/>
                         <outlet property="emojiLabel" destination="k2W-10-Fds" id="0ul-2r-mT1"/>
                     </connections>
